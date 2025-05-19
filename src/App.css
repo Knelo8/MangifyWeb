@@ -1,0 +1,114 @@
+/* App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: abominable;
+  scroll-behavior: smooth;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+}
+
+
+
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #5b127fa1;
+  transition: opacity 1s ease;
+}
+
+
+
+.hero-logo {
+  width: 500px;
+  transition: all 1.8s ease;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 1000; 
+}
+
+.logo-link {
+  text-indent: -9999px;     /* Oculta el texto desplazándolo fuera de pantalla */
+  overflow: hidden;
+  width: 80px;              /* Espacio clickeable */
+  height: 40px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.hero-logo.scrolled {
+  top: 40px;
+  transform: translate(-50%, -50%) scale(0.25);
+  z-index: 1000;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.navbar.visible {
+  transform: translateY(0);
+  background-color: #29282bd7;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-content {
+  display: absolute;
+  width: 50px;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  width: 100px;
+}
+
+.navbar-content ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-content li {
+  cursor: pointer;
+  width: auto;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffffff;
+  transition: color 0.1s ease;
+}
+
+.footer {
+  background-color: #29282b;
+  color: #ffffff;
+  padding: 2rem 0;
+  text-align: center;
+}
