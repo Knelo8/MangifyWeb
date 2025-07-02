@@ -1,0 +1,106 @@
+/* src/components/Documentation.css */
+
+
+
+.documentation-wrapper {
+  display:flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #402746;
+}
+
+
+/* Sidebar izquierdo */
+.sidebar {
+  width: 240px;
+  padding: 2rem 1rem;
+  background-color: #1e1e1e;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  box-shadow: 4px 0 0 #000;
+  z-index: 10;
+}
+
+.sidebar-logo {
+  width: 180px;
+  margin-bottom: 2rem;
+  display: block;
+  z-index: 100;
+}
+
+.sidebar h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  color: #d6c2bb;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  color: #5B17F3;
+}
+
+/* Contenido principal */
+.documentation-container {
+  flex: 1;
+  max-width: 800px;
+  margin-top: 40px;
+  margin-left: 540px;
+  align-self: center;
+  padding: 2rem;
+  padding: 3rem 2rem;
+  background-color: #b5a9d1;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  color: #444;
+}
+
+pre {
+  background-color: #1e1e2f;
+  color: #dcdcdc;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+ol {
+  padding-left: 1.5rem;
+}
+
+li strong {
+  font-size: 1.1rem;
+}
