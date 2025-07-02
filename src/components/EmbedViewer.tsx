@@ -10,7 +10,7 @@ const EmbedViewer = () => {
         <div className="mb-8 text-left">
           <h2 className="text-2xl font-semibold text-white mb-4">Editor de PDF</h2>
           <iframe
-            src="http://localhost:5173/editor?pdfUrl=/armadosMangify.pdf&configUrl=/testConfig.json"
+            src="http://3.228.194.184:5173/editor?pdfUrl=/armadosMangify.pdf&configUrl=/testConfig.json"
             width="1000"
             height="1000"
             className="w-full border rounded shadow-lg"
@@ -22,7 +22,7 @@ const EmbedViewer = () => {
         <div className="mb-8 text-left">
           <h2 className="text-2xl font-semibold text-white mb-4">Visualizador de PDF</h2>
           <iframe
-            src="http://localhost:5173/viewer?pdfUrl=/armadosMangify.pdf&configUrl=/testConfig.json"
+            src="http://3.228.194.184:5173/viewer?pdfUrl=/armadosMangify.pdf&configUrl=/testConfig.json"
             width="1650"
             height="1000"
             className="w-full border rounded shadow-lg"
