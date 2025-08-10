@@ -10,7 +10,6 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Documentation from "./components/Documentation";
 import "./App.css";
-import EmbedViewer from "./components/EmbedViewer";
 
 function AppContent() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -51,7 +50,6 @@ function AppContent() {
           }
         />
         <Route path="/documentacion" element={<Documentation />} />
-        <Route path="/demo" element={<EmbedViewer />} />
       </Routes>
     </>
   );

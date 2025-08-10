@@ -20,7 +20,7 @@ body, html {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-color: #5b127fa1;
+  background-color: #01036d;
   transition: opacity 1s ease;
 }
 
@@ -33,7 +33,7 @@ body, html {
 
 
 .hero-logo {
-  width: 500px;
+  width: 300px;
   transition: all 1.8s ease;
   position: fixed;
   top: 50%;
@@ -107,7 +107,7 @@ body, html {
   width: auto;
   font-size: 1.2rem;
   font-weight: 500;
-  color: #ffffff;
+  color: #f8da80;
   transition: color 0.1s ease;
 }
 

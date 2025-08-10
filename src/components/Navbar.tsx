@@ -11,10 +11,10 @@ const Navbar = ({ visible, isStatic = false }: NavbarProps) => {
       <div className="navbar-content">
         <ul>
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/Demo">DEMO</Link></li>
+          <li><Link to="/Demo">Carrito</Link></li>
           <li className="logo-link">LOGO</li>
-          <Link to="/documentacion">Documentación</Link>         
-          <li>FAQ</li>
+          <Link to="/documentacion">¿Quienes somos?</Link>
+          <li>Log in</li>
         </ul>
       </div>
     </nav>
